@@ -1,0 +1,164 @@
+/*Reset*/
+* {margin: 0;
+   padding: 0;
+   outline: none;
+   }
+   
+body{background: #FBFBFB;
+     }
+
+/*Header*/     
+#header{height: 45px;
+        border-bottom: 1px solid #70909D;
+        }
+        
+#header img{height: 35px;
+            width: 100px;
+            float: right;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            }
+
+/*Form - formulário de cadastro*/            
+form{margin: 20px auto 30px auto;
+     width: 750px;
+     color: #777777;
+     font: 13px Arial, Helvetica, sans-serif;
+     }
+     
+form fieldset{border: solid thick #9EB4BC;
+              border-width: 1px;
+              border-radius: 1em;
+              box-shadow: 2px 2px 2px 2px #efefef;
+              background: #f4f4f4;
+              padding: 10px;
+              }
+              
+form legend{font: 24px Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px #f4f4f4;
+            margin: 0 0 0 15px;
+            }
+            
+form label{display: block;
+           margin: 10px 0 10px 10px;
+           }
+           
+form span{display: block;
+          font: 16px Arial, Helvetica, sans-serif;
+          
+          }
+          
+form input{font: 22px Arial, Helvetica, sans-serif;
+           background: #FBFBFB;
+           border: 1px solid #ccc;
+           color: #777;           
+           }
+           
+form input:focus, form input:hover{box-shadow: 2px 1px 2px 1px #E5E5E5;
+                                   font: 22px Arial, Helvetica, sans-serif;                                   
+                                   }                                      
+            
+form select{margin: 5px 0 10px 0;
+            background: #FBFBFB;
+            border: 1px solid #E5E5E5;
+            font: 22px Arial, Helvetica, sans-serif;
+            color: #777;
+            }
+            
+form select:hover, form select:focus{box-shadow: 2px 1px 2px 1px #E5E5E5;
+                                     }
+                                     
+form .nivelEscolar{display: inline;
+                   width: 14px;
+                   margin: 0 0 0 10px;
+                   }                                     
+
+form .btn_cadastrar{height: 30px;
+                    width: 90px;
+                    background: #70909D;
+                    margin-right: 10px;
+                    color: #FFF;            
+                    border-radius: 5px;
+                    text-shadow: none;
+                    font: 13px Arial, Helvetica, sans-serif;
+                    border: 1px solid #5A7885;
+                    float: right;
+                    }
+            
+form .btn_cadastrar:hover, #btn_entrar:focus{background: #4E6772;
+                                             border: 2px solid #5A7885;
+                                             box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                             height: 30px;
+                                             width: 90px;
+                                             background: #70909D;
+                                             margin-right: 10px;
+                                             color: #FFF;            
+                                             border-radius: 5px;
+                                             text-shadow: none;
+                                             font-family: Arial, Helvetica, sans-serif;
+                                             font-size: 13px;
+                                             display: inline-block;
+                                             border: 1px solid #5A7885;
+                                             cursor: pointer;
+                                             float: right;
+                                             }
+                  
+/*Estilizando alertas de erro e afins*/
+
+/*Estilizando classes que o plugin validate do jQuery Atribue ao elementos*/       
+label.error{font: 9px Arial, Heveltica, sans-serif;
+            color: #930;
+            text-align: left;
+            display: block;
+            }     
+            
+input.error{color: #930;
+            background: #FF6F6F; 
+            }
+            
+.envie{display: block;
+       background: #006699;
+       border: 1px solid #cccccc;
+       border-radius: 5px;
+       font: 15px Arial, Helvetica, sans-serif;
+       color: #fff;
+       width: 740px;
+       height: 18px;
+       padding: 5px;
+       margin: 10px auto 0 auto;
+       }   
+            
+.noenvie{display: block;
+         margin: 10px auto 0 auto;
+         background: #ffa6a6;
+         border-radius: 5px;
+         border: 1px solid #cccccc;
+         font: 15px Arial, Helvetica, sans-serif;
+         color: #930;
+         width: 740px;
+         height: 18px;
+         padding: 5px;
+         }            
+                 
+/*Footer*/
+#footer{height: 70px;
+        background: #70909D;
+        border: 1px solid #5A7885;
+        text-align: center;
+        text-shadow: 1px 1px #333333;
+        font-weight: bold;
+        color: white;        
+        width: 99.76%;  
+        }
+        
+#footer img{float: right;
+            margin: 20px 5px 0 0;
+            }        
+
+#footer p{text-align: center;
+          display: block;
+          width: 560px;
+          margin: 30px auto;
+          font: 14px Arial, Heveltica, sans-serif;
+          }

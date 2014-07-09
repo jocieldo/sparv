@@ -1,0 +1,200 @@
+* {margin: 0;
+   padding: 0;
+   outline: none;
+   }
+   
+body{font-size: 13px;
+     font-family: Arial, sans-serif;
+     background: #FBFBFB;
+     }
+         
+#header{height: 45px;
+        border-bottom: 1px solid #70909D;
+        }
+        
+#header img{height: 35px;
+            width: 100px;
+            float: right;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            }
+       
+form fieldset{width: 272px;              
+              top: 45%;
+              left: 47.5%;
+              margin: -110px 0 0 -136px;              
+              border: 1px solid #9EB4BC;              
+              border-radius: 1em;
+              box-shadow: 2px 2px 2px 2px #efefef;
+              position: absolute;
+              font: 16px Arial, Heveltica, sans-serif;
+              text-align: left;
+              color: #777777;
+              padding: 10px 20px;
+              }
+              
+form fieldset label{display: block;
+                    margin: 10px 0;
+                    width: 272px; 
+                    }    
+                    
+form fieldset label span{display: block;
+                         padding: 3px 0;
+                         }                    
+              
+form fieldset label input{height: 36px;
+                          width: 270px; 
+                          background: #FBFBFB;
+                          border: 1px solid #E5E5E5;                    
+                          font-size: 28px;
+                          color: #999999;
+                          }              
+         
+    
+form fieldset label input:focus{box-shadow: 2px 1px 2px 1px #E5E5E5;
+                          outline: none;
+                          }
+                          
+#btn_entrar{height: 30px;
+            width: 70px;
+            background: #70909D;
+            float: right;            
+            color: #FFF;            
+            border-radius: 5px;
+            text-shadow: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            display: inline-block;
+            border: 1px solid #5A7885;            
+            }
+            
+#btn_entrar:hover, #btn_entrar:focus{background: #4E6772;
+                                     border: 2px solid #5A7885;
+                                     box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                     }            
+
+form fieldset div{float: left;
+                  text-align: center;
+                  color: #9EB4BC; 
+                  margin: 10px 45px 5px 45px;
+                  }
+
+form fieldset div a, form fieldset div a:visited{text-decoration: none;
+                                                 outline: none;
+                                                 font-size: 13px;
+                                                 color: #9EB4BC; 
+                                                 }      
+
+form fieldset div a:hover{text-decoration: underline;
+                          }
+                          
+form fieldset h1{font: 15px Arial, Helvetica, sans-serif;
+                 font-weight: bold;
+                 margin: 5px 0 0 0;
+                 color: #fff;
+                 display: block;
+                 width: 274px;
+                 padding: 5px;
+                 background: #006699;
+                 border: 1px solid #cccccc;
+                 border-top-left-radius: 5px;
+                 border-top-right-radius: 5px;
+                 border-bottom: none;
+                 }
+                 
+form fieldset .msg{font: 13px Arial, Helveltica, sans-serif;
+                   display: block;
+                   width: 273px;
+                   padding: 5px;
+                   text-align: justify;
+                   background: #f4f4f4;
+                   border-bottom-right-radius: 10px;
+                   border-bottom-left-radius: 10px;
+                   border: 1px solid #cccccc;
+                   margin: 0 0 10px 0;
+                   }
+                   
+form fieldset .voltar{text-decoration: none;
+                      text-align: center;
+                      outline: none;
+                      font-size: 14px;
+                      color: #9EB4BC;
+                      margin: 0 0 0 100px;
+                      }
+                      
+form fieldset .voltar:hover{text-decoration: underline;
+                            }                      
+                  
+/*Estilizando alertas de erro e afins*/
+
+label.error{font: 9px Arial, Heveltica, sans-serif;
+            color: #930;
+            text-align: left;
+            display: block;
+            }     
+            
+input.error{color: #930;
+            background: #FF6F6F; 
+            }
+
+form fieldset .errar{display: block;
+                     width: 260px;
+                     padding: 5px;
+                     background: #ffa6a6;
+                     margin: 6px 0 10px 0;
+                     font: 14px Arial, Helvetica, sans-serif;
+                     color: #930;
+                     float: left;
+                     border: 1px solid #cccccc;
+                     text-align: left;
+                     font-size: 11px;
+                     }
+                     
+form fieldset .alertas{display: block;
+                       width: 260px;
+                       padding: 5px;
+                       background: #ffff66;
+                       margin: 10px 0 0 0;
+                       font: 11px Arial, Helvetica, sans-serif;
+                       color: #930;
+                       float: left;
+                       border: 1px solid #cccccc;
+                       font-size: 11px;
+                       }
+                       
+form fieldset .envie{display: block;
+                 float: left;
+                 background: #006699;
+                 border: 1px solid #cccccc;
+                 font: 11px Arial, Helvetica, sans-serif;
+                 color: #fff;
+                 width: 260px;
+                 padding: 5px;
+                 margin: 10px 0 10px 19px;
+                 text-align: center;
+                 }                       
+       
+#footer{height: 100px;
+        background: #70909D;
+        border: 1px solid #5A7885;
+        text-align: center;
+        text-shadow: 1px 1px #333333;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 99.76%;
+       }
+
+#footer p{text-align: center;
+          display: block;
+          width: 570px;
+          margin: 43px auto;
+          }
+          
+#footer img{float: right;
+            margin: 57px 3px 0 0;
+            }          
+
+          

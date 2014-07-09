@@ -1,0 +1,258 @@
+/*Reset*/
+* {padding: 0;
+   margin: 0;
+   }
+
+#box {margin: 0 auto;
+      width: 900px;
+      }
+      
+/*Painel Game*/
+#painel_game {width: 900px;              
+float: left;
+top: 42.1%;
+left: 50%;
+margin: -276px 0 0 -450px;
+position: absolute;
+}
+              
+#header_game{width: 835px;
+             float: left;
+             margin: 5px 0 0 12px;
+             font: 11px Arial, Heveltica, sans-serif;
+             border-bottom: 1px solid #999999;
+             }
+             
+#header_game .user_info{float: left;
+                        padding: 5px 0;
+                        margin: 0 0 0 5px;
+                        }            
+                        
+#header_game .user_info span{font-weight: bold;
+                             }
+                             
+#header_game .user_info a{color: #9EB4BC;
+                          text-decoration: none;
+                          font: 11px Arial, Helvetica, sans-serif;
+                          }
+                          
+#header_game .user_info a:hover{text-decoration: underline;                                
+                                }                          
+
+#header_game .cronometro{float: right;
+                         padding: 5px 0;
+                         margin: 0 5px 0 0;
+                         font-size: 11px;
+                         }
+                         
+#header_game .cronometro span{font-size: 11px;}                         
+              
+#painel_game .content_cartas{height: 530px;
+                             width: 860px;
+                             margin: 10px 0 10px 17px;
+                             float: left;
+                             border: solid thick #9EB4BC;
+                             border-width: 1px;
+                             border-radius: 1em;
+                             box-shadow: 2px 2px 2px 2px #efefef;
+                             
+                             }
+                             
+#painel_game .content_cartas img{height: 195px;
+                                 width: 150px;
+                                 }                             
+                             
+#painel_game .content_cartas .space_left{height: 195px;
+                                         width: 150px;
+                                         margin: 30px 0 0 40px;
+                                         background: #e2e2e2;
+                                         float: left;
+                                         border: solid thick #888888;
+                                         border-width: 1px;
+                                         box-shadow: 2px 2px 2px 2px #efefef;
+                                         }
+                                         
+#painel_game .content_cartas .space_right{height: 195px;
+                                          width: 150px;
+                                          margin: 30px 40px 0 0;                                          
+                                          background: #e2e2e2;
+                                          float: right;
+                                          border: solid thick #888888;
+                                          border-width: 1px;
+                                          box-shadow: 2px 2px 2px 2px #efefef;
+                                          }
+                                         
+#painel_game .content_cartas .card_onload{height: 195px;
+                                         width: 150px;
+                                         margin: 284px 0 0 165px;
+                                         background: #e2e2e2;
+                                         float: left;
+                                         border: solid thick #888888;
+                                         border-width: 1px;
+                                         box-shadow: 2px 2px 2px 2px #efefef;}                                         
+              
+/*Footer*/              
+#footer{height: 98px;
+        margin-top: 14px;
+        background: #70909D;
+        border: 1px solid #5A7885;
+        text-align: center;
+        text-shadow: 1px 1px #333333;
+        font: 15px Arial, Heveltica, sans-serif;        
+        color: white;
+        width: 99.76%;
+        float: left;
+        padding-right: 1px;
+        position: absolute;
+        bottom: 0;
+        }
+
+#footer p{text-align: center;
+          display: block;
+          width: 570px;
+          margin: 43px auto;
+          }
+		  
+#carta{
+	cursor:pointer;
+}
+body {
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	font-size: 62.5%;
+}
+
+#resposta{
+	resize: none;
+  width: 477px;
+}
+#pergunta, #resposta, #mensagemPontuacao{
+	font-size:14px;
+}
+
+#mensagemPontuacao{
+	font-weight:bold;
+	color:green;
+}
+
+.botao{
+	border: 1px solid #5A7885;
+  background: #70909D; 
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 40px;
+  font: 15px Arial, Heveltica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 4px #333;
+}	
+
+.botao:hover{background: #4E6772;
+             border: 1px solid #5A7885;             
+             }
+
+.instrucaoBotao{
+  float:right;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 5px;
+  margin: 0 0 0 0;
+  color: #fff;
+}
+
+.instrucao{
+  clear:both;
+  background: #f4f4f4;
+  font: 22px Arial, Helvetica, sans-serif;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #5A7885;
+  float: left;
+  display: block;
+  margin: 20px 30px;
+  padding: 5px;
+  width: 790px;
+  min-height: 150px;
+  box-shadow: 0 0 4px #ccc;
+}
+
+.labelInst{
+  float:left;
+  font: 30px Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 4px #f4f4f4;
+  color: #666;
+  border-bottom: 2px solid #5A7885;
+  width: 810px;
+  padding: 5px;
+  margin: 50px 0 0 20px;
+}
+
+#counter{
+	font-size:12px;
+}
+
+.ui-widget-overlay{
+	background-color: #AAA;
+	opacity: 1;
+}
+
+.corpoInst{
+	float: right;
+  margin-top: 0;
+}
+
+.next{
+	float:right;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 5px;
+  margin: 0 0 0 0;
+  color: #fff;
+  background: #5A7885;
+  border: 1px solid #ccc;
+  border-top: 0;
+  width: 77px;
+}
+
+.next:hover{background: #4E6772;
+             border: 1px solid #5A7885;  
+             border-top: 0;           
+             }
+
+.previous  {
+	float:left;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 5px;
+  margin: 0 0 0 55px;
+  color: #fff;
+  background: #5A7885;
+  width: 77px;
+}
+
+.previous:hover{background: #4E6772;
+                border: 1px solid #5A7885;             
+                border-top: 0;
+                }
+
+.numbers{
+	font: 14px Arial, Heveltica, sans-serif;
+  font-weight: bold;
+  color: #5A7885;
+	float:right;
+}
+
+.separator{
+	font-weight:bold;
+	font: 13px Arial, Heveltica, sans-serif;
+	float:right;
+  color: #666;
+	margin: 0 5px;
+}

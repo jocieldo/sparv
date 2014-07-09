@@ -1,0 +1,1324 @@
+/*Reinicializando objetos e definindo padrões*/
+
+* {
+   outline: none;
+   padding: 0;
+   margin: 0;
+   }
+   
+body{font: 13px Arial, Helvetica, sans-serif;
+     background: url(../images/painel_body.jpg) repeat-x #FBFBFB;
+     }
+     
+h1{font: 16px Arial, Heveltica, sans-serif;
+   color: #666;
+   padding: 5px 5px;
+   margin: 0 10px 5px 10px;
+   text-shadow: 1px 1px #ccc;
+   border-bottom: 1px solid #ccc;
+   }     
+   
+textarea{width: 873px;
+         margin: 0 0 0 10px;
+         border-radius: 5px;
+         border: 1px solid #ccc;
+         resize: none;  
+         font: 12px Arial, Heveltica, sans-serif;
+         color: #333;
+         padding: 3px;
+         }
+         
+.newbtn{padding: 5px;
+        margin: 5px 10px 0 0;
+        float: right;
+        background: #70909D;        
+        border-radius: 5px;
+        border: 1px solid #5A7885;
+        font:12px Arial, Helvetica, sans-serif;        
+        color: #FFF;            
+        outline: none;
+        }
+                         
+.newbtn:hover{background: #4E6772;
+              border: 1px solid #5A7885;
+              } 
+     
+/*Div mãe suprema BOX*/
+     
+#box{width: 900px;
+     margin: 0 auto;         
+     }      
+     
+/*Formantando Header*/     
+     
+#header{height: 74px;
+        background: #93AAB5;
+        width: 900px;
+        float: left;
+        }
+        
+#header .menu_bar_superior{height: 44px;
+                           width: 814px;
+                           margin: 0 auto;
+                           }
+
+#header .menu_bar_superior ul{display: inline-block;
+                              height: 44px;
+                              text-align: center;
+                              float: left;
+                              }
+                              
+#header .menu_bar_superior ul li{display: inline;
+                                 float: left;
+                                 }                              
+                                 
+#header .menu_bar_superior ul li a{font: 16px Arial, Helvetica, sans-serif;
+                                   text-shadow: -1px 1px #666666;
+                                   text-decoration: none;
+                                   outline: none;
+                                   color: #FFFFFF;                                   
+                                   padding: 25px 12px 0 12px;
+                                   float: left;
+                                   }
+                                   
+#header .menu_bar_superior ul li a:hover{background: #70909D;                               
+                                         float: left;
+                                         border-top: 7px solid #356A7F;
+                                         border-left: 1px solid #356A7F;
+                                         border-right: 1px solid #356A7F;
+                                         padding: 3px 11px 23px 11px;
+                                         box-shadow: 2px 1px 20px #356A7F;
+                                         }
+                                         
+.efeitoHover{background: #70909D;
+             height: 44px;
+             padding: 0 12px 0 12px;
+             float: left;
+             border-bottom: 2px solid #93AAB5;
+             }                                         
+                                         
+/*Dando o efeito da borda no menu*/                                         
+
+#header .menu_bar_inferior{width: 900px;
+                           border-top: 2px solid #356A7F;
+                           border-bottom: 4px solid #70909D;
+                           float: left;
+                           }
+                           
+/*Estilizando a div local*/
+
+#local{width: 888px;
+       float: left;
+       padding: 5px 5px;       
+       font: 11px Arial, Helvetica, sans-serif;
+       color: #333333;
+       display: block;
+       border-left: 1px solid #ccc;
+       border-right: 1px solid #ccc;
+       border-bottom: 1px solid #ccc;
+       background: #FBFBFB;
+       }
+
+#local .caminho{float: left;          
+                }
+
+#local .caminho a{text-decoration: none; 
+                  color:#333333;
+                  }
+                  
+#local .caminho a:hover{text-decoration: underline;
+                        }                  
+                  
+#local .welcome{float: right;
+                } 
+                
+#local .welcome span{font-weight: bold;
+                     }
+                     
+#local .welcome a{color: #333333;
+                  }
+                  
+#local .welcome a:hover{color: #000099;
+                        }                  
+                           
+/*Estilizandoo content*/
+
+#content{width: 898px;
+         border-left: 1px solid #ccc;
+         border-right: 1px solid #ccc;
+         float: left;
+         padding: 10px 0;
+         }
+   
+       
+#content .painel_table{width: 875px;
+                       height: 500px;
+                       margin: 0 10px;
+                       float: left; 
+                       }
+                       
+#content .painel_table h1{text-align: left}                       
+                           
+/*Estilizando rodapé "footer"*/
+
+#footer{width: 898px;
+        height: 70px;        
+        background: #70909D;
+        border:1px solid #ccc;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        float: left;
+        }
+        
+#footer p{font: 14px Arial, Helvetica, sans-serif;
+          color: #FFFFFF;
+          text-shadow: 1px 1px #333333;
+          text-align: center;
+          margin: 30px 0 0 0;
+          }  
+          
+/*Estilizando páginas do painel administrativo*/          
+
+/*Página das fases*/
+.pagfases{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagfases form{background: #bbd0da;
+               border: 1px solid #ccc;
+               border-radius: 5px;
+               width: 835px;
+               margin: 10px auto;
+               padding: 10px;
+               }
+
+.pagfases form label{display: block;
+                     font: 12px Arial, Heveltica, sans-serif;
+                     padding: 5px 0;
+                     }
+
+.pagfases form label[for="perguntaNumber"]{float: left;
+                                           margin: 0 10px 0 0;
+                                           }
+.pagfases form label[for="perguntaTxt"] {display: inline;}
+
+.pagfases form label strong{display: block;
+                            }
+
+.pagfases form label input{font-size: 15px;
+                           font-weight: normal;
+                           margin: 5px 0 0 0;
+                           border: 1px solid #ccc;
+                           padding: 5px;
+                           }
+
+.pagfases form  select{font-size: 15px;
+                       font-weight: normal;
+                       margin: 0;
+                       border: 1px solid #ccc;
+                       padding: 5px;
+                       display: block;
+                       }                           
+
+.pagfases form input[name="btnCriaFase"], .pagfases form input[name="btnCriaFase2"]{padding: 5px;
+                                         background: #70909D;        
+                                         border-radius: 5px;
+                                         border: 1px solid #5A7885;
+                                         font: 12px Arial, Helvetica, sans-serif;        
+                                         color: #FFF;            
+                                         margin-left: 790px;
+                                         }
+                         
+.pagfases form  input[name="btnCriaFase"]:hover, .pagfases form input[name="btnCriaFase2"]:hover{background: #4E6772;
+                                                border: 1px solid #5A7885;
+                                                } 
+
+.pagfases form label input[name="faseDescricao"]{width: 200px;}
+
+.pagfases form label input[name="faseCarta"]{width: 70px; text-transform: uppercase;}
+
+.pagfases form label input[name="faseCarta"]{width: 70px;}
+
+.pagfases form label input[name="fasePerguntaNumber"], input[name="fasePosicao"]{width: 28px;
+                                                                                 text-align: center;
+                                                                                 }
+
+.pagfases form label input[name="fasePerguntaTxt"]{width: 600px;}
+
+.pagfases form label input[name="fasePerguntaTxt"]:disabled, input[name="fasePosicao"]:disabled{background: #999; color: #fff;}
+
+.pagfases .cardRight{float: right; 
+                     border-radius: 5px; 
+                     padding: 5px; 
+                     background: #3d738e; 
+                     border: 2px solid #929ea3;
+                     width: 100px; 
+                     height: 127px;
+                     }
+
+.pagfases .cardRight img{border-radius: 5px; 
+                         float: left;
+                         width: 100px; 
+                         height: 127px;
+                         }
+
+.pagfases .cardRight p{font-weight: bold; 
+                       text-align: center; 
+                       margin: 50.5px auto;
+                       color: #fff;
+                       }
+
+.pagfases table tbody{font-weight: bold;
+                      color: #666;
+                      }  
+
+.pagfases table tbody tr td{padding: 5px;}
+
+.pagfases table tbody td img{width: 50px;
+                             padding: 5px 5px;
+                             }                              
+                                
+.pagfases table tbody .points{width: 30px;
+                              text-align: center;                                 
+                              }
+                                  
+.pagfases table tbody .acao{text-align: center;
+                            padding: 8px;
+                            }
+
+.pagfases table tbody .acao img{width: 15px;}       
+
+.pagfases table tbody .acao img:hover{background: #70909D;        
+                                      border: 1px solid #5A7885;
+                                      border-radius: 3px;
+                                      width: 13px;
+                                      }
+                               
+.pagfases table tbody .acao a{color: #597784;
+                                 text-transform: uppercase;
+                                 text-decoration: none;
+                                 font-size: 12px;
+                                 }
+                                 
+.pagfases table tbody .acao a:hover{text-decoration: underline;
+                                    color: #0080FF;
+                                    }  
+                                       
+.pagfases .btnNewFase{width: 60px;
+                     padding: 5px;
+                     margin: 10px 397px 0 0;
+                     float: right;
+                     background: #70909D;
+                     color: #FFF;            
+                     border-radius: 5px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     font-size: 12px;
+                     border: 1px solid #356A7F;
+                     cursor: pointer;
+                     outline: none;
+                     display: inline-block;
+                     border: 1px solid #5A7885;
+                     cursor: pointer;
+                     text-decoration: none;                         
+                     }
+                         
+.pagfases .btnNewFase:hover, .pagfases .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         } 
+                                                         
+/*Página das modelos*/                                                         
+.pagmodelos{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+
+.pagmodelos form{background: #bbd0da; 
+                 width: 835px; 
+                 padding: 10px; 
+                 display: block; 
+                 border: 1px solid #ccc; 
+                 border-radius: 5px;
+                 margin: 0 0 0 10px;
+                 font: 15px Arial, Heveltica, sans-serif;
+                 font-weight: normal;
+                 float: left;
+                 }
+
+.pagmodelos form label{display: block; 
+                       margin: 5px 0;
+                       }
+
+.pagmodelos form  img{float: right;
+                      width: 27px;
+                      margin-right: 5px;
+                      margin-top: 5px;
+                      }                       
+
+.pagmodelos form label strong{font-weight: normal;
+                              } 
+
+.pagmodelos form label input, select{border: 1px solid #ccc;
+                             font-size: 15px;
+                             padding: 5px;
+                             }
+
+.pagmodelos form label div{margin: 10px 0;}                             
+
+.pagmodelos form h2{font: 18px Arial, Heveltica, sans-serif; 
+                    margin: 10px 0 0 0; 
+                    color: #3e9363; 
+                    display: inline;
+                    float: left;
+                    }
+
+.pagmodelos form .instAssoc, .time{float: left; 
+                                   border: 1px solid #ccc; 
+                                   border-radius: 5px; 
+                                   background: #d3e4ed; 
+                                   padding: 10px;
+                                   width: 810px;
+                                   box-shadow: 0 0 5px #999 inset;
+                                   }
+
+.issoaqui{float: left; 
+          border: 1px solid #ccc; 
+          border-radius: 5px; 
+          background: white; 
+          padding: 10px;
+          box-shadow: 0 0 5px #999 inset;
+          width: 20px;
+          margin: 0 5px 5px 0;
+          text-align: center;
+          display: block;
+         }                                   
+
+.pagmodelos form .instAssoc strong{float: left; 
+                                   margin: 10px 5px 0 5px;
+                                   }
+
+.pagmodelos form .instAssoc input{float: left; 
+                                  width: 20px;
+                                  text-align: center;
+                                  }
+
+.pagmodelos form input:hover{border: 1px solid #999;}
+
+.pagmodelos form .instAssoc span{display: block; 
+                                 float: left;
+                                 }
+
+.pagmodelos form .instAssoc span textarea{margin: 0; 
+                                          width: 780px;
+                                          padding: 10px;
+                                          }
+
+.pagmodelos form .time div strong{font-weight: bold; 
+                                  font-size: 12px; 
+                                  color: #555;
+                                  }                                          
+
+.pagmodelos form .time div .margem{margin: 0 0 0 5px;}                                  
+
+.pagmodelos form .time div span{font-size: 12px;}                                  
+
+.pagmodelos table tbody td{padding: 0 5px;}
+
+.pagmodelos table tbody td img{width: 50px;
+                               padding: 5px;
+                                }
+                                
+.pagmodelos table tbody{font-weight: bold;
+                         color: #666;
+                         }                                
+                                
+.pagmodelos table tbody .card{width: 60px;
+                               } 
+
+.pagmodelos table tbody .points{width: 60px;
+                                 text-align: center;                                 
+                                 }
+                                 
+.pagmodelos table tbody .fases{padding: 0 5px 0 5px;}                                 
+
+.pagmodelos table tbody .positions{width: 70px;
+                                   text-align: center;
+                                   }
+                                    
+.pagmodelos table tbody .posicao{width: 90px;
+                                  text-align: center;
+                                  }   
+                                  
+.pagmodelos table tbody tr td{border-radius: 5px;} 
+
+.pagmodelos table tbody tr:hover{background: #c3e7d4;}                                 
+
+.pagmodelos table tbody th:hover{background: #4E6772; text-decoration: underline;}
+
+.pagmodelos table tbody .acao{text-align: center;
+                            padding: 8px;
+                            width: 25px;
+                            }
+
+.pagmodelos table tbody .acao img{width: 15px;}       
+
+.pagmodelos table tbody .acao img:hover{background: #70909D;        
+                                      border: 1px solid #5A7885;
+                                      border-radius: 3px;
+                                      width: 13px;
+                                      }
+                               
+.pagmodelos table tbody .acao a{color: #597784;
+                                 text-transform: uppercase;
+                                 text-decoration: none;
+                                 font-size: 12px;
+                                 }
+                                 
+.pagmodelos table tbody .acao a:hover{text-decoration: underline;
+                                    color: #0080FF;
+                                    }   
+                                       
+.pagmodelos .btnNewFase{padding: 5px;
+                        margin: 10px 395px;
+                        background: #70909D;
+                        color: #FFF;
+                        border: 1px solid #5A7885;
+                        border-radius: 5px;
+                        font: 12px Arial, Helvetica, sans-serif;
+                        display: inline-block;
+                        text-decoration: none;                         
+                        text-align: center;
+                        }
+                         
+.pagmodelos .btnNewFase:hover, .pagmodelos .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         }
+                                                         
+.pagmodelos table tbody td .mais{width: 15px;
+                                 padding: 5px 0 3px 20px;
+                                 }  
+.pagmodelos table tbody .titleModel{background: #70909D; 
+                                    color:#fff;
+                                    }     
+
+.pagmodelos .maismenos{padding: 0 30px 0 24px;
+                       }  
+
+/*Página das pergunta */
+.pagperguntas{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagperguntas label{display: block;
+                   float: right;
+                   text-align: right;
+                   width: 875px;
+                   margin: 0 0 10px 0;
+                   }   
+                   
+.pagperguntas label span{font: 14px Arial, Helvetica, sans-serif; 
+                        color: #333333;
+                        text-shadow: 1px 1px #f4f4f4;
+                        }   
+                        
+.pagperguntas label input{font: 15px Arial, Helvetica, sans-serif; 
+                         color: #666;
+                         width: 300px;
+                         background: #F0F0F0;
+                         border: 1px solid #356A7F;
+                         padding: 3px;
+                         }
+                         
+.pagperguntas label .btnSearch{width: 60px;
+                              height: 25px;
+                              margin: 0 0 0 5px;
+                              float: right;
+                              background: #70909D;
+                              color: #FFF;            
+                              border-radius: 5px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              font-size: 12px;
+                              border: 1px solid #356A7F;
+                              cursor: pointer;
+                              outline: none;
+                              display: inline-block;
+                              border: 1px solid #5A7885;
+                              cursor: pointer;
+                              }
+                              
+.pagperguntas label .btnSearch:hover, .pagperguntas label .btnSearch:focus{background: #4E6772;
+                                                                         border: 2px solid #5A7885;
+                                                                         box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                         }
+
+.pagperguntas table tbody td img{width: 50px;
+                                padding: 5px 5px;
+                                }
+                                
+.pagperguntas table tbody{font-weight: bold;
+                         color: #666;
+                         }                      
+
+.pagperguntas table tbody tr:hover{background: #c3e7d4;}
+                                
+.pagperguntas table tbody .card{width: 60px;
+                               } 
+
+.pagperguntas table tbody .points{width: 60px;
+                                 text-align: center;  
+                                 padding: 5px;
+                                 }
+                                 
+.pagperguntas table tbody .fases{padding: 0 5px 0 5px;}                                 
+
+.pagperguntas table tbody .positions{width: 70px;
+                                    text-align: center;
+                                    }
+                                    
+.pagperguntas table tbody .posicao{width: 90px;
+                                  text-align: center;
+                                  }   
+
+.pagperguntas table tbody tr td{border-radius: 5px;}                                  
+                                  
+.pagperguntas table tbody .acao{text-align: center;
+                                padding: 8px;
+                                width: 30px;
+                                }
+
+.pagperguntas table tbody .acao img{width: 15px;}       
+
+.pagperguntas table tbody .acao img:hover{background: #70909D;        
+                                      border: 1px solid #5A7885;
+                                      border-radius: 3px;
+                                      width: 13px;
+                                      }
+                               
+.pagperguntas table tbody .acao a{color: #597784;
+                                 text-transform: uppercase;
+                                 text-decoration: none;
+                                 font-size: 12px;
+                                 }
+                                 
+.pagperguntas table tbody .acao a:hover{text-decoration: underline;
+                                    color: #0080FF;
+                                    }   
+                                       
+.pagperguntas .btnNewFase{width: 90px;
+                     padding: 5px;
+                     margin: 10px 397px 0 0;
+                     float: right;
+                     background: #70909D;
+                     color: #FFF;            
+                     border-radius: 5px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     font-size: 12px;
+                     border: 1px solid #356A7F;
+                     cursor: pointer;
+                     outline: none;
+                     display: inline-block;
+                     border: 1px solid #5A7885;
+                     cursor: pointer;
+                     text-decoration: none; 
+                     text-align: center;
+                     }
+                         
+.pagperguntas .btnNewFase:hover, .pagperguntas .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         }  
+                                                         
+/*Página das tempo*/
+.pagtempo{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagtempo label{display: block;
+                float: right;
+                   text-align: right;
+                   width: 875px;
+                   margin: 0 0 10px 0;
+                   }   
+                   
+.pagtempo label span{font: 14px Arial, Helvetica, sans-serif; 
+                        color: #333333;
+                        text-shadow: 1px 1px #f4f4f4;
+                        }   
+                        
+.pagtempo label input{font: 15px Arial, Helvetica, sans-serif; 
+                         color: #666;
+                         width: 300px;
+                         background: #F0F0F0;
+                         border: 1px solid #356A7F;
+                         padding: 3px;
+                         }
+                         
+.pagtempo label .btnSearch{width: 60px;
+                              height: 25px;
+                              margin: 0 0 0 5px;
+                              float: right;
+                              background: #70909D;
+                              color: #FFF;            
+                              border-radius: 5px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              font-size: 12px;
+                              border: 1px solid #356A7F;
+                              cursor: pointer;
+                              outline: none;
+                              display: inline-block;
+                              border: 1px solid #5A7885;
+                              cursor: pointer;
+                              }
+                              
+.pagtempo label .btnSearch:hover, .pagtempo label .btnSearch:focus{background: #4E6772;
+                                                                         border: 2px solid #5A7885;
+                                                                         box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                         }
+
+.pagtempo table tbody td img{width: 50px;
+                                padding: 5px 5px;
+                                }
+                                
+.pagtempo table tbody{font-weight: bold;
+                         color: #666;
+                         }       
+
+.pagtempo table tbody tr:hover{background: #c3e7d4;}                                                  
+                                
+.pagtempo table tbody .card{width: 60px;
+                               } 
+
+.pagtempo table tbody .points{width: 60px;
+                                 text-align: center;                                 
+                                 }
+                                 
+.pagtempo table tbody .fases{padding: 0 5px 0 5px;}                                 
+
+.pagtempo table tbody .positions{width: 70px;
+                                    text-align: center;
+                                    }
+                                    
+.pagtempo table tbody .posicao{width: 90px;
+                                  text-align: center;
+                                  }   
+                                  
+.pagtempo table tbody tr td{border-radius: 5px;}                                  
+                                  
+.pagtempo table tbody .acao{text-align: center;
+                            padding: 8px;
+                            width: 40px;
+                            }
+
+.pagtempo table tbody .acao img{width: 15px;}       
+
+.pagtempo table tbody .acao img:hover{background: #70909D;        
+                                      border: 1px solid #5A7885;
+                                      border-radius: 3px;
+                                      width: 13px;
+                                      }
+                               
+.pagtempo table tbody .acao a{color: #597784;
+                                 text-transform: uppercase;
+                                 text-decoration: none;
+                                 font-size: 12px;
+                                 }
+                                 
+.pagtempo table tbody .acao a:hover{text-decoration: underline;
+                                    color: #0080FF;
+                                    } 
+                                       
+.pagtempo .btnNewFase{width: 90px;
+                     padding: 5px;
+                     margin: 10px 397px 0 0;
+                     float: right;
+                     background: #70909D;
+                     color: #FFF;            
+                     border-radius: 5px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     font-size: 12px;
+                     border: 1px solid #356A7F;
+                     cursor: pointer;
+                     outline: none;
+                     display: inline-block;
+                     border: 1px solid #5A7885;
+                     cursor: pointer;
+                     text-decoration: none; 
+                     text-align: center;
+                     }
+                         
+.pagtempo .btnNewFase:hover, .pagtempo .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         }                                                           
+                                                         
+/*Página das usuários */
+.pagusers{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagusers label{display: block;
+                   float: right;
+                   text-align: right;
+                   width: 875px;
+                   margin: 0 0 10px 0;
+                   }   
+                   
+.pagusers label span{font: 14px Arial, Helvetica, sans-serif; 
+                        color: #333333;
+                        text-shadow: 1px 1px #f4f4f4;
+                        }   
+                        
+.pagusers label input{font: 15px Arial, Helvetica, sans-serif; 
+                         color: #666;
+                         width: 300px;
+                         background: #F0F0F0;
+                         border: 1px solid #356A7F;
+                         padding: 3px;
+                         }
+                         
+.pagusers label .btnSearch{width: 60px;
+                              height: 25px;
+                              margin: 0 0 0 5px;
+                              float: right;
+                              background: #70909D;
+                              color: #FFF;            
+                              border-radius: 5px;
+                              font-family: Arial, Helvetica, sans-serif;
+                              font-size: 12px;
+                              border: 1px solid #356A7F;
+                              cursor: pointer;
+                              outline: none;
+                              display: inline-block;
+                              border: 1px solid #5A7885;
+                              cursor: pointer;
+                              }
+                              
+.pagusers label .btnSearch:hover, .pagusers label .btnSearch:focus{background: #4E6772;
+                                                                         border: 2px solid #5A7885;
+                                                                         box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                        }
+
+.pagusers .formUser{float: left;
+                    background: #bbd0da;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                    width: 855px;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    }                      
+
+.pagusers .formUser  select{float: left;
+                            margin: 0 0 10px 0;
+                            padding: 3px;
+                            border: 1px solid #ccc;
+                            }
+
+.pagusers .formUser  select:hover{border-color: #555;}                            
+
+.pagusers .formUser label{float: left;
+                          font: 13px Arial, Heveltica, sans-serif;
+                          }
+
+.pagusers .formUser label strong{color: #444;
+                                 float: left;
+                                 }
+
+.pagusers .formUser label span{float: left; 
+                               text-shadow: none; 
+                               color: #555;
+                               padding-left: 5px;
+                               }
+                                                                        
+.pagusers table{margin: 0 0 10px 0;}                                                                         
+
+.pagusers table tbody td img{width: 50px;
+                                padding: 5px 5px;
+                                }
+                                
+.pagusers table tbody{font-weight: bold;
+                      color: #666;                         
+                      }   
+
+.pagusers table tbody tr:hover{background: #c3e7d4;}
+                                
+.pagusers table tbody .card{width: 60px;
+                               } 
+
+.pagusers table tbody .points{width: 60px;
+                                 text-align: center;                                 
+                                 }
+                                 
+.pagusers table tbody .fases{padding: 0 5px 0 5px;}                                 
+
+.pagusers table tbody .positions{width: 70px;
+                                    text-align: center;
+                                    }
+                                    
+.pagusers table tbody .posicao{width: 90px;
+                                  text-align: center;
+                                  }   
+                                  
+.pagusers table tbody tr td{border-radius: 5px;}                                  
+                                  
+.pagusers table tbody .acao{text-align: center;
+                            padding: 8px;
+                            width: 25px;
+                            }
+
+.pagusers table tbody .acao img{width: 15px;}       
+
+.pagusers table tbody .acao img:hover{background: #70909D;        
+                                      border: 1px solid #5A7885;
+                                      border-radius: 3px;
+                                      width: 13px;
+                                      }
+                               
+.pagusers table tbody .acao a{color: #597784;
+                                 text-transform: uppercase;
+                                 text-decoration: none;
+                                 font-size: 12px;
+                                 }
+                                 
+.pagusers table tbody .acao a:hover{text-decoration: underline;
+                                    color: #0080FF;
+                                    } 
+                                       
+.pagusers .botoes{margin: 0 320px;
+                 }                                       
+                                       
+.pagusers .btnNewFase{width: 90px;
+                     padding: 5px;
+                     margin: 10px 397px 0 0;
+                     float: right;
+                     background: #70909D;
+                     color: #FFF;            
+                     border-radius: 5px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     font-size: 12px;
+                     border: 1px solid #356A7F;
+                     cursor: pointer;
+                     outline: none;
+                     display: inline-block;
+                     border: 1px solid #5A7885;
+                     cursor: pointer;
+                     text-decoration: none; 
+                     text-align: center;
+                     }
+                         
+.pagusers .btnNewFase:hover, .pagusers .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         }       
+                                                         
+/*Página das usuários */
+.pagresultados{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagresultados form {display: block;
+                     float: left;
+                     text-align: left;
+                     margin: 0 0 10px 0px;
+                     }
+
+.pagresultados form[name="userBusca"]{width:160px;
+                                      margin-left: 10px;
+                                      padding: 1px 0;
+                                      }   
+
+.pagresultados form[name="userBusca"] input{margin-left: 5px;
+                                            width: 130px;
+                                            }
+
+.pagresultados form[name="userBusca"] .newbtn{margin: 0;
+                                              color: #fff;
+                                              width: 60px;
+                                              border-radius: 3px;
+                                              }
+                 
+.pagresultados form fieldset{padding: 2px 5px 7px 5px;
+                             background: #CAE4FF;
+                             border-radius: 10px;
+                             border: 1px solid #93AAB5;
+                             font: 12px Arial, Helvetica, sans-serif;
+                             }
+                         
+.pagresultados form fieldset legend{font: 12px Arial, Helvetica, sans-serif;
+                                    margin: 0 0 0 5px;
+                                    color: #666;
+                                    }                          
+                         
+.pagresultados form fieldset span{font-weight: bold;
+                                  padding: 0 2px 0 5px;                              
+                                  }                         
+
+.pagresultados form fieldset strong{font-weight: normal;
+                                    }
+                                
+.pagresultados form fieldset select{font: 12px Arial, Helvetica, sans-serif;
+                                    border: 1px solid #70909D;
+                                    padding: 2px;               
+                                    }                                              
+                                
+.pagresultados form fieldset input{font: 12px Arial, Helvetica, sans-serif;
+                                   padding: 2px;                                   
+                                   border: 1px solid #70909D;
+                                   color: #444;
+                                   }
+
+.pagresultados form fieldset input[name="faixaNumber"]{padding: 2px 0 2px 3px; 
+                                                       width: 20px;
+                                                       margin-left: 5px;
+                                                       }
+
+.pagresultados form fieldset input[type="radio"]{background: #fff;
+                                                 }                                                       
+.pagresultados form fieldset input[name="data"]{width: 65px;}  
+                               
+.pagresultados form fieldset .btnFiltar{width: 50px;
+                                        height: 22px;                                    
+                                        background: #70909D;
+                                        color: #FFF;            
+                                        border-radius: 3px;
+                                        border: 1px solid #356A7F;
+                                        outline: none;
+                                        border: 1px solid #5A7885;
+                                        cursor: pointer;
+                                        padding: 2px;     
+                                        margin-left: 5px;          
+                                        }
+                                    
+.pagresultados form fieldset .btnFiltar:hover, .pagresultados form fieldset .btnFiltar:focus{background: #4E6772;
+                                                                                             border: 1px solid #5A7885;
+                                                                                             box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                                             } 
+                                                                         
+.pagresultados table{margin: 0 0 10px 0;}
+                                
+.pagresultados table tbody{font-weight: bold;
+                           color: #666;                         
+                           }   
+
+.pagresultados table tbody tr td{border-radius: 5px;  padding: 10px;}
+
+.pagresultados table tbody tr:hover{background: #c3e7d4;}
+                                       
+.pagresultados .btnNewFase{width: 80px;
+                     padding: 5px;
+                     margin: 10px 397px 0 0;
+                     float: right;
+                     background: #70909D;
+                     color: #FFF;            
+                     border-radius: 5px;
+                     font-family: Arial, Helvetica, sans-serif;
+                     font-size: 12px;
+                     border: 1px solid #356A7F;
+                     cursor: pointer;
+                     outline: none;
+                     display: inline-block;
+                     border: 1px solid #5A7885;
+                     cursor: pointer;
+                     text-decoration: none;                         
+                     }
+                         
+.pagresultados .btnNewFase:hover, .pagresultados .btnNewFase:focus{background: #4E6772;
+                                                         border: 1px solid #5A7885;
+                                                         }  
+                                                         
+.pagresultados .resul_infors{display: block;
+                             width: 860px;
+                             padding: 5px;
+                             margin: 0 2px 0px 0;
+                             background: #A6C0CC;
+                             text-align: left;
+                             border-radius: 5px;
+                             border: 1px solid #ccc;
+                             font: 13px Arial, Heveltica, sans-serif;
+                             }   
+                             
+.pagresultados .resul_infors strong{color: #fff;
+                                    text-shadow: 1px 1px #999;
+                                    }                             
+                             
+.pagresultados .resul_infors span{font: 12px Arial, Heveltica, sans-serif;
+                                  text-shadow: 1px 0 #ccc;
+                                  color: #333;                                  
+                                  }
+
+.pagresultados .legenda{background: #CAE4FF;
+                        font-size: 11px;
+                        width: 160px;
+                        padding: 5px;
+                        border: 1px solid #ccc;
+                        margin: 5px 2px 0 0;
+                        }
+                        
+.pagresultados .legenda span{font-size: 11px;
+                             text-shadow: none;
+                             }
+                             
+/*Pag Cartas*/  
+.pagcartas{width: 875px;
+          margin: 0 10px;
+          color: #333333;
+          }
+             
+.pagcartas form {display: block;
+                 float: left;
+                 text-align: left;
+                 margin: 0 0 10px 12px;
+                 }
+                 
+.pagcartas form fieldset{padding: 2px 5px 7px 5px;
+                         background: #CAE4FF;
+                         border-radius: 10px;
+                         border: 1px solid #93AAB5;
+                         font: 12px Arial, Helvetica, sans-serif;
+                         }
+                         
+.pagcartas form fieldset legend{font: 12px Arial, Helvetica, sans-serif;
+                                margin: 0 0 0 5px;
+                                color: #666;
+                                }                          
+                         
+.pagcartas form fieldset span{font-weight: bold;
+                              padding: 0 2px 0 5px;                              
+                              }                         
+
+.pagcartas form fieldset strong{font-weight: normal;
+                                
+                                }
+                                
+.pagcartas form fieldset select{font: 12px Arial, Helvetica, sans-serif;
+                                border-radius: 5px;
+                                border: 1px solid #70909D;
+                                }                                
+
+.pagcartas form fieldset select:disabled{background: #ccc;
+                                         color: #fff;
+                                         box-shadow: 0 0 2px red;
+                                         }                                
+                                
+.pagcartas form fieldset input{font: 12px Arial, Helvetica, sans-serif;
+                               border-radius: 5px;
+                               border: 1px solid #70909D;
+                               color: #666666;
+                               }
+                               
+.pagcartas form fieldset .btnFiltar{width: 50px;
+                                    height: 22px;                                    
+                                    background: #70909D;
+                                    color: #FFF;            
+                                    border-radius: 5px;
+                                    border: 1px solid #356A7F;
+                                    outline: none;
+                                    border: 1px solid #5A7885;
+                                    cursor: pointer;
+                                    }
+                                    
+.pagcartas form fieldset .btnFiltar:hover, .pagcartas form fieldset .btnFiltar:focus{background: #4E6772;
+                                                                                     border: 2px solid #5A7885;
+                                                                                     box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                                     } 
+                                                                                     
+.pagcartas .searchCard fieldset .btnSearch{width: 50px;
+                                    height: 22px;                                    
+                                    background: #70909D;
+                                    color: #FFF;            
+                                    border-radius: 5px;
+                                    border: 1px solid #356A7F;
+                                    outline: none;
+                                    border: 1px solid #5A7885;
+                                    cursor: pointer;
+                                    }
+                                    
+.pagcartas .searchCard fieldset .btnSearch:hover, .pagcartas form fieldset .btnSearch:focus{background: #4E6772;
+                                                                                     border: 2px solid #5A7885;
+                                                                                     box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                                     }  
+.pagcartas .searchCard{float: right;
+                       margin: 0 12px 0 0;
+                       }
+                                                                                     
+.pagcartas .searchCard fieldset{padding: 2px 5px 6px 5px;
+                                }
+                                
+.pagcartas .searchCard fieldset input{font: 12px Arial, Helvetica, sans-serif;
+                                      border-radius: 5px;
+                                      border: 1px solid #70909D;
+                                      height: 20px;
+                                      padding: 3px;
+                                      }                              
+
+.pagcartas ul{list-style: none;
+          display: block;
+          font: 12px Arial, Helvetica, sans-serif;
+          float: left;
+          padding: 5px 0 10px 8px;
+          margin: 10px 0 0 12px;                 
+          border: 1px solid #93AAB5;
+          border-radius: 10px;
+          background: #E7ECEF;
+          width: 842px;
+          }                        
+
+.pagcartas ul li{background: #70909D;  
+             padding: 2px 2px 5px 2px;
+             float: left;
+             border: 1px solid #ccc;
+             margin: 5px 8px;
+             border-radius: 10px;
+             text-align: center;
+             display: inline;
+             } 
+
+.pagcartas ul li img{border: 1px solid #ccc;
+                 display: block;
+                 border-top-left-radius: 5px;
+                 border-top-right-radius: 5px;
+                 width: 95px;
+                 height: 127px;
+                 margin-bottom: 3px;
+                 }                              
+
+.pagcartas ul li strong{color: #fff}    
+
+.pagcartas ul li span{color: #333}            
+                                 
+/*Paginador da div cartas*/                     
+
+#paginator{display: block;
+           float: right;
+           font: 11px Arial, Heveltica, sans-serif;
+           margin: 20px 15px 5px 0;
+           }
+
+#paginator a{color: #4C9D74;
+             text-decoration: none;
+             background: #fffcf8;
+             padding: 5px;
+             margin: 0 5px;
+             border: 1px solid #ccc;
+             }
+
+#paginator a:hover{color: #4c529d;
+                   text-decoration: underline;
+                   box-shadow: 0 0 2px #666;
+                   }   
+
+#visor{text-align: center;
+       color: #555;
+       font: 11px Arial, Heveltica, sans-serif;
+       text-shadow: 0 0 4px #fff;
+       margin: 5px 0;
+       }                                
+
+/*Alertas para painel admnistrativo | alertP = Positivo, alertaN = Negativo, alertaNeutro = Neutro*/
+.alertaP{background: #5EFF5E; 
+         display: block;
+         font: 12px Arial, Heveltica, sans-serif;
+         text-shadow: none;
+         color: #666;         
+         border: 1px solid #ccc;
+         padding: 5px;
+         }
+         
+.alertaN{background: #FF7979; 
+         display: block;
+         font: 12px Arial, Heveltica, sans-serif;
+         text-shadow: none;
+         color: #666;         
+         border: 1px solid #ccc;
+         padding: 5px;
+         }         
+         
+.alertaNeutro{background: #FFFF82;
+              display: block;
+              font: 12px Arial, Heveltica, sans-serif;
+              text-shadow: none;
+              color: #666;         
+              border: 1px solid #ccc;
+              padding: 5px;
+              }         
+         
+          
+#criandoTempo{float: left; 
+              background: #E7ECEF;
+              border: 1px solid #ccc;
+              border-radius:5px;
+              width: 835px;
+              padding: 10px;
+              margin: 10px 0 0 10px;
+              box-shadow: 0 0 4px #ccc;
+              }
+
+#criandoTempo label{float: left;                    
+                    }
+
+#criandoTempo input{float: left;
+                    background: #fff;
+                    border: 1px solid #999;
+                    font-size: 15px;
+                    color: #666;
+                    padding: 5px;                 
+                    }
+
+#criandoTempo select{padding: 3px;
+                     float: left;
+                     display: inline;   
+                     margin-bottom: 5px;                  
+                    }            
+
+#criandoTempo .sltAlter{margin-top: -5px;
+                     margin-bottom: 10px;}                    
+
+#criandoTempo em{float: left;
+                 margin: 10px 0 0 5px;
+                 font: 11px Arial, Heveltica, sans-serif;
+                 color: #555;
+                 }
+
+#criandoTempo .time{width: 20px;  
+                    margin: 0 5px 5px 5px;                  
+                    text-align: center;
+                    }
+
+#criandoTempo strong{float: left; padding: 0 5px 0 0; margin: 3px 0 0 0;}
+
+#criandoTempo .newbtn{padding: 5px;
+                      margin: 5px 10px 0 0;
+                      float: right;
+                      background: #70909D;        
+                      border-radius: 5px;
+                      border: 1px solid #5A7885;
+                      font:12px Arial, Helvetica, sans-serif;        
+                      color: #FFF;            
+                      outline: none;
+                      }
+                         
+#criandoTempo .newbtn:hover{background: #4E6772;
+                            border: 1px solid #5A7885;
+                            } 
+
+/*Estilizando pagina de regras extras links*/
+.btnPage{background: #70909D;
+         border-radius: 4px;
+         border: 1px solid #4E6772;
+         text-align: center;
+         padding: 10px;
+         margin: 20px 0;
+         text-shadow: 1px 1px 1px #444;
+         }
+
+.btnPage:hover{background: #4E6772}
+
+.btnPage a{font: 30px Arial, Helvetica, sans-serif; color: #fff; text-decoration: none; }
+
+#esquerda{float: left;
+          margin-left: 170px;
+          }
+
+#direita{float: right;
+         margin-right: 110px;
+         }

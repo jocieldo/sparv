@@ -1,0 +1,135 @@
+* {margin: 0;
+   padding: 0;
+   outline: none;
+   }
+   
+body{font-size: 13px;
+     font-family: Arial, sans-serif;
+     background: #FBFBFB;
+     }
+         
+#header{height: 45px;
+        border-bottom: 1px solid #70909D;
+        }
+        
+#header img{height: 35px;
+            width: 100px;
+            float: right;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            }
+       
+form{width: 312px;
+     top: 50%;
+     left: 50%;
+     margin: -131px 0 0 -156px;
+     padding: 10px;
+     border: 1px solid #9EB4BC;     
+     border-radius: 1em;
+     box-shadow: 2px 2px 2px 2px #efefef;
+     position: absolute;
+     font-size: 16px;
+     text-align: left;
+     color: #777777;
+     }
+     
+form label{display: block;           
+           }   
+           
+form label span{margin: 5px 0 0 5px;
+                display: block;
+                float: left;
+                }           
+            
+form label input{height: 36px;
+                 width: 300px; 
+                 background: #FBFBFB;
+                 border: 1px solid #E5E5E5;
+                 margin: 5px 5px 10px 5px;
+                 font-size: 28px;
+                 color: #999999;
+                 }
+    
+form label input:focus{box-shadow: 2px 1px 2px 1px #E5E5E5;
+                       }
+
+form .btn_recuperar_senha{height: 30px;
+                          width: 70px;
+                          background: #70909D;
+                          float: right;                     
+                          color: #FFF;            
+                          border-radius: 5px;
+                          text-shadow: none;
+                          font: 13px Arial, Helvetica, sans-serif;                     
+                          border: 1px solid #5A7885;
+                          margin: 0 5px 0 0;
+                          }
+            
+form .btn_recuperar_senha:hover, form .btn_recuperar_senha:focus{background: #4E6772;
+                                                                 border: 2px solid #5A7885;
+                                                                 box-shadow: 2px 2px 2px 2px #E5E5E5;
+                                                                 }
+                  
+/*Estilizando alertas de erro e afins*/
+
+form .error{display: block;
+            width: 300px;
+            padding: 5px;
+            background: #ffa6a6;
+            margin: 6px 0 10px 0;
+            font: 14px Arial, Helvetica, sans-serif;
+            color: #930;
+            float: left;
+            border: 1px solid #cccccc;
+            text-align: left;
+            font-size: 11px;
+            }
+                     
+form .alertas{display: block;
+              width: 290px;
+              padding: 5px;
+              background: #ffff66;
+              margin: 10px 0 0 5px;
+              font: 11px Arial, Helvetica, sans-serif;
+              color: #930;
+              float: left;
+              border: 1px solid #cccccc;
+              font-size: 11px;
+              }
+                       
+form .envie{display: block;
+            float: left;
+            background: #006699;
+            border: 1px solid #cccccc;
+            font: 11px Arial, Helvetica, sans-serif;
+            color: #fff;
+            width: 290px;
+            padding: 5px;
+            margin: 0 0 0 5px;
+            text-align: left;
+            }                       
+       
+#footer{height: 100px;
+        background: #70909D;
+        border: 1px solid #5A7885;
+        text-align: center;
+        text-shadow: 1px 1px #333333;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 99.76%;
+        }
+
+#footer p{text-align: center;
+          display: block;
+          width: 570px;
+          margin: 43px auto;
+          }
+          
+#footer img{float: right;
+            margin: 57px 3px 0 0;
+            }          
+
+          
